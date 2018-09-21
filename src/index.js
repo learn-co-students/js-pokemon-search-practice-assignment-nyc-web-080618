@@ -47,7 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
  if (arr.length > 0) {
-
+  let centerText = document.querySelector('center')
+  if (centerText) {
+    centerText.remove()
+  }
+  
   for (let i = 0; i< frontFilterPokemon.length; i++) {
     let pokeDiv = document.createElement('div')
     let image = document.createElement('img')
