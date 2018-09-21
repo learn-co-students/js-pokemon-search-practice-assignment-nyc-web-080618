@@ -26,8 +26,7 @@ const Pokemon = (() => {
     }
 
     static filterPokemonBasedOnSearchTerm(userPokeNameToSearch) {
-      filteredListOfPokemon = allPokemon.filter(pokeInstance =>
-        pokeInstance.name.includes(userPokeNameToSearch.toLowerCase())
+      filteredListOfPokemon = allPokemon.filter(pokeInstance => pokeInstance.name.includes(userPokeNameToSearch.toLowerCase())
       )
     }
 
